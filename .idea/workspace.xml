@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b79fb36a-996b-461d-8530-5a1a581ea607" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.12.3.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.12.3.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/cli/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/debug/src/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/node/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-not-sel-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-not-sel-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/chromium-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/chromium-versions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/versions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-releases/data/processed/envs.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-releases/data/processed/envs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-releases/data/raw/nodejs.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-releases/data/raw/nodejs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-releases/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-releases/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605638977436</updated>
       <workItem from="1605638979681" duration="302000" />
-      <workItem from="1605869770309" duration="368000" />
+      <workItem from="1605869770309" duration="1543000" />
     </task>
     <servers />
   </component>
@@ -102,21 +79,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="330" key="GridCell.Tab.0.bottom" timestamp="1605870030816">
+    <state width="1899" height="330" key="GridCell.Tab.0.bottom" timestamp="1605873164484">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605870030816" />
-    <state width="1899" height="330" key="GridCell.Tab.0.center" timestamp="1605870030814">
+    <state width="1899" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605873164484" />
+    <state width="1899" height="330" key="GridCell.Tab.0.center" timestamp="1605873164483">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="330" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605870030814" />
-    <state width="1899" height="330" key="GridCell.Tab.0.left" timestamp="1605870030811">
+    <state width="1899" height="330" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605873164483" />
+    <state width="1899" height="330" key="GridCell.Tab.0.left" timestamp="1605873164482">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="330" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605870030811" />
-    <state width="1899" height="330" key="GridCell.Tab.0.right" timestamp="1605870030815">
+    <state width="1899" height="330" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605873164482" />
+    <state width="1899" height="330" key="GridCell.Tab.0.right" timestamp="1605873164484">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="330" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605870030815" />
+    <state width="1899" height="330" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605873164484" />
   </component>
 </project>
