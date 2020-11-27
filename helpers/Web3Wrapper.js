@@ -30,6 +30,11 @@ export const getTransactionCount = async(address)=>{
 
 }
 
+export const getTransaction = async(transactionHash)=>{
+    return await web3.eth.getTransaction(transactionHash)
+
+}
+
 export const toEth= (wei)=>{
     return wei/1000000000000000000;
 }
@@ -37,11 +42,12 @@ export const toWei=  (eth)=>{
     return eth*1000000000000000000;
 }
 export const signAndSendTransaction= async (to,amount,gas,privateKey)=>{
-   const Signed = await signTransaction(to,amount,gas,privateKey);
-   const receipt = await sendSignedTransaction(Signed.rawTransaction);
-   return {signed:Signed,receipt:receipt}
+    const Signed = await signTransaction(to,amount,gas,privateKey);
+    const receipt = await sendSignedTransaction(Signed.rawTransaction);
+    const transaction = await getTransaction(receipt.transactionHash);
+    return {signed:Signed,receipt:receipt,transaction:transaction}
 }
-let rawTx;
+
 export const signTransaction = async (to,amount,gas,privateKey)=>{
     // return await web3.eth.sendTransaction({from: fromAccount, to: toAmount, value:amount});
     return await web3.eth.accounts.signTransaction({

@@ -26,6 +26,22 @@ const transactionSchema = new Schema({
         type:String,
         default:""
     },
+    value:{
+        type:String,
+        default:""
+    },
+    nonce:{
+        type:Number,
+        default:0,
+    },
+    gasPrice:{
+        type:String,
+        default:""
+    },
+    input:{
+        type:String,
+        default:""
+    },
     gasUsed: {
         type:Number,
         default:null

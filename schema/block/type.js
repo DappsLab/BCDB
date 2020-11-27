@@ -25,6 +25,12 @@ const blockTypeDefs = gql`
         timestamp:Int,
         transactions:[Transaction],
         uncles:[String],
+        createdAt: String!,
+        updatedAt: String!,
+    }
+    enum SortBy {
+        NUMBER,
+        DATE,
     }
 
 `;

@@ -15,11 +15,27 @@ const transactionTypeDefs = gql`
         cumulativeGasUsed:Int,
         contractAddress:String,
         status:Boolean,
+        valus:String,
+        nonce:Int,
+        gasPrice:String,
+        input:String,
         logsBloom:String,
-        logs:[String]
+        logs:[String],
+        createdAt: String!,
+        updatedAt: String!,
+    }
+    
+    enum Sort{
+        NONCE,
+        BLOCK,
+        FROM,
+        TO,
+        VALUE,
+        STATUS,
     }
     
 `;
+
 
 
 module.exports = transactionTypeDefs;

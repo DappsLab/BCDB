@@ -1,4 +1,4 @@
-import {getBlock,getTransactionReceipt} from './Web3Wrapper'
+import {getBlock, getTransaction, getTransactionReceipt} from './Web3Wrapper'
 import {Block,Transaction} from "../models";
 import {subscribeBlock} from "./Web3WebSocket"
 
@@ -46,13 +46,21 @@ export const blockAndTransactionToDB = async(blockNumberOrBlockHash)=>{
     newBlock.transactions=[];
     await (async () =>{
         if(transactionsArray!=null){
-            let transaction
+            let receipt
             await (async () =>{
                 console.log("transactionsArray",transactionsArray)
                 for(let transactionHash of transactionsArray ){
                     console.log("transactionHash",transactionHash);
-                    transaction = await getTransactionReceipt(transactionHash)
-                    let newTransaction = new Transaction(transaction);
+                    receipt = await getTransactionReceipt(transactionHash)
+                    let transaction = await getTransaction(transactionHash);
+                    let newTransaction = new Transaction({
+                        ...receipt,
+                        value: transaction.value,
+                        nonce: transaction.nonce,
+                        gasPrice: transaction.gasPrice,
+                        input:transaction.input,
+                    });
+                    console.log("Transactiondata:",newTransaction);
                     let response = await newTransaction.save();
                     console.log('transaction:',response);
                     newBlock.transactions.push(response._id);

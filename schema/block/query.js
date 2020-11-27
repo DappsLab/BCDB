@@ -4,11 +4,10 @@ const blockQuery = gql`
     extend type Query {
         blocks: [Block],
         blockById(id:ID!):Block,
+        blockByNumber(blockNumber:Int!):[Block],
+        blockByHash(blockHash:String!):[Block],
     },
     
-    extend type Mutation {
-
-    }
     
 `;
 
