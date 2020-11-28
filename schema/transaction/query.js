@@ -7,7 +7,7 @@ const transactionQuery = gql`
     extend type Query {
         transactions: [Transaction],
         transactionById(id:ID!): Transaction,
-        transactionByTransactionHash(transactionHash:String!): [Transaction],
+        transactionByTransactionHash(transactionHash:String!): Transaction,
         transactionsByAddress(address:String!,soryBy:Sort): [Transaction],
     },
     
