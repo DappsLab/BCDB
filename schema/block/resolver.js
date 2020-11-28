@@ -1,7 +1,7 @@
-const {Block} = require('../../models');
+const {Block, Transaction} = require('../../models');
 
 let fetchData = () => {
-    return Block.find().populate('transactions');
+    return Block.find();
 }
 let SortBy = (sortBy) => {
     let SortBy;
@@ -18,6 +18,11 @@ let SortBy = (sortBy) => {
 }
 
 const resolvers = {
+    Block:{
+        transactions:async (parent)=>{
+            return await Transaction.find({"_id":parent.transactions})
+        },
+    },
     Query: {
         blocks: () => {
             return fetchData()
@@ -29,7 +34,7 @@ const resolvers = {
         },
         blockByNumber: async (_, {blockNumber}) => {
            try{
-               let block = await Block.find({"number": blockNumber}).populate('transactions');
+               let block = await Block.find({"number": blockNumber});
                console.log("Block:", block);
                return block;
            }catch(err){
@@ -38,7 +43,7 @@ const resolvers = {
         },
         blockByHash: async (_, {blockHash}) => {
             try {
-                const block = await Block.find({"hash": blockHash}).populate('transactions');
+                const block = await Block.find({"hash": blockHash});
                 console.log("Block:", block);
                 return block;
             }catch(err){
