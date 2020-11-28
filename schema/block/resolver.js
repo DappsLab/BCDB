@@ -34,7 +34,7 @@ const resolvers = {
         },
         blockByNumber: async (_, {blockNumber}) => {
            try{
-               let block = await Block.find({"number": blockNumber});
+               let block = await Block.findOne({"number": blockNumber});
                console.log("Block:", block);
                return block;
            }catch(err){
@@ -43,7 +43,7 @@ const resolvers = {
         },
         blockByHash: async (_, {blockHash}) => {
             try {
-                const block = await Block.find({"hash": blockHash});
+                const block = await Block.findOne({"hash": blockHash});
                 console.log("Block:", block);
                 return block;
             }catch(err){

@@ -38,7 +38,7 @@ const resolvers = {
             return transaction;
         },
         transactionByTransactionHash:async(_,{transactionHash})=>{
-            return await Transaction.find({transactionHash:transactionHash});
+            return await Transaction.findOne({transactionHash:transactionHash});
         },
         transactionsByAddress:async (_,{address,sortBy})=>{
             return await Transaction.find({'$or':[{from:address},{to:address}]}).sort(SortBy(sortBy));
