@@ -15,7 +15,7 @@ const transactionTypeDefs = gql`
         cumulativeGasUsed:Int,
         contractAddress:String,
         status:Boolean,
-        valus:String,
+        value:String,
         nonce:Int,
         gasPrice:String,
         input:String,
