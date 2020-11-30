@@ -32,6 +32,7 @@ const transactionTypeDefs = gql`
         TO,
         VALUE,
         STATUS,
+        DATE,
     }
     
 `;

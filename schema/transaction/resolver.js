@@ -12,6 +12,8 @@ let SortBy = (sortBy)=>{
             SortBy={nonce: -1}
         }else if(sortBy==='BLOCK'){
             SortBy={blockNumber: -1}
+        }else if(sortBy==='DATE'){
+            SortBy={createdAt: -1}
         }else if(sortBy==='FROM'){
             SortBy={from: -1}
         }else if(sortBy==='TO'){
