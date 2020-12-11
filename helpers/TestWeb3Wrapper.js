@@ -1,8 +1,7 @@
 import Web3 from 'web3';
-import {MAIN_NET_HTTP} from '../config'
+import {TEST_NET_HTTP} from '../config'
 
-
-export const web3 = new Web3(MAIN_NET_HTTP);
+export const web3 = new Web3(TEST_NET_HTTP);
 
 
 export const getBalance = async(address)=>{

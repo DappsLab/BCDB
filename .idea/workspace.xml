@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b79fb36a-996b-461d-8530-5a1a581ea607" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/TestWeb3WebSocket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/TestWeb3Wrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/testSync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/testBlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/transaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/testBlock/query.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/testBlock/resolver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/testBlock/type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/testTransaction/query.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/testTransaction/resolver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/testTransaction/type.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/Web3WebSocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/Web3WebSocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/Web3Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/Web3Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/transactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/testTransaction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.12.3.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.12.3.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/resolver.js" beforeDir="false" afterPath="$PROJECT_DIR$/schema/resolver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/typeDefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/schema/typeDefs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +39,9 @@
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1kQhxuyHqQBrNSFNK2GIObEmtYr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,17 +49,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/schema" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/helpers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/schema" />
+      <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/helpers" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -83,6 +116,13 @@
       <workItem from="1606587591569" duration="1208000" />
       <workItem from="1606687343525" duration="136000" />
       <workItem from="1606713910350" duration="11000" />
+      <workItem from="1606738769287" duration="283000" />
+      <workItem from="1606807984739" duration="390000" />
+      <workItem from="1606827059371" duration="8204000" />
+      <workItem from="1607384465617" duration="681000" />
+      <workItem from="1607427877699" duration="3283000" />
+      <workItem from="1607702439551" duration="375000" />
+      <workItem from="1607703107133" duration="423000" />
     </task>
     <servers />
   </component>
@@ -90,26 +130,30 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="432" key="GridCell.Tab.0.bottom" timestamp="1606684099457">
-      <screen x="0" y="25" width="1920" height="1103" />
+    <state width="1899" height="455" key="GridCell.Tab.0.bottom" timestamp="1607643541676">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1606587576986" />
+    <state width="1899" height="455" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1607643541676" />
     <state width="1899" height="432" key="GridCell.Tab.0.bottom/0.25.1920.1103@0.25.1920.1103" timestamp="1606684099457" />
-    <state width="1899" height="432" key="GridCell.Tab.0.center" timestamp="1606684099456">
-      <screen x="0" y="25" width="1920" height="1103" />
+    <state width="1899" height="455" key="GridCell.Tab.0.center" timestamp="1607643541675">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1606587576984" />
+    <state width="1899" height="455" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1607643541675" />
     <state width="1899" height="432" key="GridCell.Tab.0.center/0.25.1920.1103@0.25.1920.1103" timestamp="1606684099456" />
-    <state width="1899" height="432" key="GridCell.Tab.0.left" timestamp="1606684099456">
-      <screen x="0" y="25" width="1920" height="1103" />
+    <state width="1899" height="455" key="GridCell.Tab.0.left" timestamp="1607643541674">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1606587576984" />
+    <state width="1899" height="455" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1607643541674" />
     <state width="1899" height="432" key="GridCell.Tab.0.left/0.25.1920.1103@0.25.1920.1103" timestamp="1606684099456" />
-    <state width="1899" height="432" key="GridCell.Tab.0.right" timestamp="1606684099457">
-      <screen x="0" y="25" width="1920" height="1103" />
+    <state width="1899" height="455" key="GridCell.Tab.0.right" timestamp="1607643541676">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1606587576985" />
+    <state width="1899" height="455" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1607643541676" />
     <state width="1899" height="432" key="GridCell.Tab.0.right/0.25.1920.1103@0.25.1920.1103" timestamp="1606684099457" />
+    <state x="548" y="361" key="IDE.errors.dialog" timestamp="1607427600919">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="548" y="361" key="IDE.errors.dialog/0.0.1920.1200@0.0.1920.1200" timestamp="1607427600919" />
     <state x="469" y="250" key="SettingsEditor" timestamp="1606202539825">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

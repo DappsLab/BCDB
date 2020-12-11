@@ -1,9 +1,8 @@
 import Web3 from 'web3';
-import {blockAndTransactionToDB} from './sync'
-    import {MAIN_NET_WS} from '../config'
+import {blockAndTransactionToDB} from './testSync'
+import {TEST_NET_WS} from '../config'
 
-
-const web3 = new Web3(new Web3.providers.WebsocketProvider(MAIN_NET_WS));
+const web3 = new Web3(new Web3.providers.WebsocketProvider(TEST_NET_WS));
 export const subscribeBlock=async ()=>{
     var subscription = web3.eth.subscribe('newBlockHeaders', function(error, result){
         if (!error) {
