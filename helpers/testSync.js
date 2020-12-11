@@ -1,13 +1,13 @@
-import {getBlock, getTransaction, getTransactionReceipt} from './Web3Wrapper'
-import {Block,Transaction} from "../models";
-import {subscribeBlock} from "./Web3WebSocket"
+import {getBlock, getTransaction, getTransactionReceipt} from './TestWeb3Wrapper'
+import {TestBlock,TestTransaction} from "../models";
+import {subscribeBlock} from "./TestWeb3WebSocket"
 
 
 export const syncBlockChain = async()=>{
 
     while(true){
         console.log("inloop")
-        let response = await Block.findOne({}).sort('-number')
+        let response = await TestBlock.findOne({}).sort('-number')
         let currentBlock = -1;
         console.log("response",response)
         if(response !== null && response!==""){
@@ -37,7 +37,7 @@ export const downloadBlockChain = async (fromBlockNumber,toBlockNumber) =>{
 
 export const blockAndTransactionToDB = async(blockNumberOrBlockHash)=>{
     let block = await getBlock(blockNumberOrBlockHash.toString());
-    let newBlock = new Block;
+    let newBlock = new TestBlock;
     newBlock={
         ...block
     };
@@ -53,7 +53,7 @@ export const blockAndTransactionToDB = async(blockNumberOrBlockHash)=>{
                     console.log("transactionHash",transactionHash);
                     receipt = await getTransactionReceipt(transactionHash)
                     let transaction = await getTransaction(transactionHash);
-                    let newTransaction = new Transaction({
+                    let newTransaction = new TestTransaction({
                         ...receipt,
                         value: transaction.value,
                         nonce: transaction.nonce,
@@ -69,7 +69,7 @@ export const blockAndTransactionToDB = async(blockNumberOrBlockHash)=>{
         }
     })()
     console.log("block:",newBlock);
-    await Block.create(newBlock);
+    await TestBlock.create(newBlock);
 }
 
 
