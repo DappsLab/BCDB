@@ -3,7 +3,7 @@ import {TestBlock,TestTransaction} from "../models";
 import {subscribeBlock} from "./TestWeb3WebSocket"
 
 
-export const syncBlockChain = async()=>{
+export const syncTestBlockChain = async()=>{
 
     while(true){
         console.log("inloop")

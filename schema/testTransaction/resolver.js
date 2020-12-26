@@ -31,18 +31,18 @@ let SortBy = (sortBy)=>{
 
 const resolvers = {
     Query: {
-        transactions: () => {
+        testTransactions: () => {
             return fetchData()
         },
-        transactionById: async (_,args)=>{
+        testTransactionById: async (_,args)=>{
             let transaction= await TestTransaction.findById(args.id);
             console.log("Transaction:",transaction);
             return transaction;
         },
-        transactionByTransactionHash:async(_,{transactionHash})=>{
+        testTransactionByTransactionHash:async(_,{transactionHash})=>{
             return TestTransaction.findOne({transactionHash:transactionHash});
         },
-        transactionsByAddress:async (_,{address,sortBy})=>{
+        testTransactionsByAddress:async (_,{address,sortBy})=>{
             return await TestTransaction.find({'$or':[{from:address},{to:address}]}).sort(SortBy(sortBy));
         },
 

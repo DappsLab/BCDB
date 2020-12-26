@@ -11,6 +11,7 @@ const resolvers = require('./schema/resolver.js')
 const mongoose = require('mongoose');
 import * as AppModels from './models';
 import {syncBlockChain} from "./helpers/sync";
+import {syncTestBlockChain} from "./helpers/testSync";
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -88,6 +89,7 @@ app.listen(4001, () => {
 
 (async()=>{
   await syncBlockChain();
+  await syncTestBlockChain();
 })()
 
 module.exports = app;
