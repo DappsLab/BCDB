@@ -18,7 +18,7 @@ var usersRouter = require('./routes/users');
 let cors=require('cors');
 
 // connect to DB mongo
-const uri = "mongodb+srv://qasim:qasim1234@abdulla.eftvp.mongodb.net/bcdb?retryWrites=true&w=majority";
+const uri = "mongodb+srv://qasim:qasim1234@abdulla.eftvp.mongodb.net/bcdblocally?retryWrites=true&w=majority";
 mongoose.connect(uri);
 mongoose.Promise = global.Promise;
 mongoose.connection.once('open', () => {
